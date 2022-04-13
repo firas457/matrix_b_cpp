@@ -1,13 +1,13 @@
 #include<vector>
 #include<iostream>
-#include "Matrix.hpp"
+#include "sources/Matrix.hpp"
 using namespace std;
 using namespace zich;
 
+int main(){
 
-int main()
-{
-    
+
+
 std::vector<double> mat1={ 1, 0, 0, 
                            0, 1, 0,
                            0, 0, 1
@@ -21,7 +21,13 @@ std::vector<double> mat2={ 1, 1, 1,
 zich::Matrix  ma1{mat1,3,3};
 zich::Matrix  ma2(mat2,4,3);
 
+
+
   cout << ma1 << endl;
+
+std::cout << "//////////////////////////////////////" << endl;
+
+  cout << -ma1 << endl;
 
 std::cout << "//////////////////////////////////////" << endl;
 
@@ -51,4 +57,7 @@ std::cout << "//////////////////////////////////////" << endl;
   std::cout << "//////////////////////////////////////" << endl;
 
   cout << ma2 * 2 << endl;
+
+  
 }
+
